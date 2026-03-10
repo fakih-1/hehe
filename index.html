@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semangat</title>
+
+<style>
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body{
+	height:100vh;
+	width:100%;
+	background-image:linear-gradient(to bottom right,#3d5b63,#385781);
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+marquee{
+	font-family:arial;
+	font-weight:bold;
+	font-size:28px;
+	width:100%;
+	color:white;
+	font-style:italic;
+	letter-spacing:4px;
+}
+</style>
+
+</head>
+<body>
+
+<audio src="music\1.mpeg" loop></audio>
+
+<marquee scrollamount="9">aca, semangat ya ngerjain skripsi 😆. aku tau skripsi kamu kadang bikin kamu pusing banget dan bikin kamu mau nyerah, tapi aku yakin kamu pasti bisa 😤. aku cuma pengen kamu tau, tiap huruf yang kamu tulis bikin aku makin kagum sama kamu, dan setiap capek yang kamu rasakan aku selalu pengen berada di dekat kamu, nemenin kamu, peluk kamu, dan bilang “kamu nggak sendirian kok” 🥹. jadiii aca tetap semangat ya ngerjain skripsi nya, kalo kamu capek kamu bisa langsung chat atau telepon aku kok hehe 😆.</marquee>
+
+<script>
+
+const lagu = document.querySelector("audio");
+
+document.body.addEventListener("click", function(){
+	lagu.play();
+});
+
+</script>
+
+</body>
+</html>
